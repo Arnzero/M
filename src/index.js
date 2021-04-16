@@ -23,7 +23,7 @@ app.set("views", __dirname + "/views");
 
   // middleware for public resources [css, images]
   app.use(express.static(path.join(__dirname, '/public')));
-  app.use('/public',express.static('public'))
+  //app.use('/public',express.static('public'))
   app.use(express.json());
 
 
@@ -37,8 +37,13 @@ app.set("views", __dirname + "/views");
   app.get("/landingPage", (req, res) => {
     foodItem = "Delicious Botanical Corn"
     res.render("./inventory/inventory.ejs", {foodItem:foodItem});
-  })
+  });
 
+
+  app.get("/menu", (req, res) => {
+    foodItem = "Delicious Menu"
+    res.render("./menu/menu.ejs", {foodItem:foodItem});
+  });
 
 
 
