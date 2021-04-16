@@ -1,0 +1,163 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);
+
+body, html {
+    margin: 0;
+    padding: 1%;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica, sans-serif;
+    line-height: 1.45;
+    height: 120%;  
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-image {
+    /* Full height */
+    height: 50%; 
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    /*required for parallex effect */
+    background-attachment: fixed;
+}
+  
+/* Images used */
+.img1 { background-image: url("/images/cbk1.jpg"); }
+.img2 { background-image: url("/images/cbk2.jpg"); }
+.img3 { background-image: url("/images/cbk3.jpg"); }
+.img4 { background-image: url("/images/cbk4.jpg"); }
+
+  
+  /* Position text in the middle of the page/image */
+.bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    border: 10px solid #f1f1f1;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.spacer{
+    border-style: dashed;
+    height:1%;background-color:whitesmoke;
+}
+header {
+    color: #FFFFFF;
+    background-color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+h1 {
+  font-size: 48px;
+  margin: 0 0 16px 0;
+}
+h2 {
+  font-weight: 300;
+  font-size: 24px;
+  margin: 0 0 16px 0;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    max-width: 900px;
+}
+.btn {
+    display: inline-block;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    background: #549DA0;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #468486;
+}
+section {
+    text-align: center;
+    padding: 40px 0;
+}
+.features {
+    background: #FFFFFF;
+    color: #000000;
+}
+.feature {
+    width: 32%;
+    display: inline-block;
+    font-size:16px;
+}
+.feature img {
+    width: 40%;
+}
+.quote {
+    background:#549DA0;
+    color:#FFFFFF;
+}
+blockquote {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+blockquote p {
+    margin: 0 0 5px 0;
+    font-size: 24px;
+}
+blockquote cite {
+    font-size: 16px;
+    font-style: italic;
+}  
+blockquote cite:before {
+    content: '–';
+    margin-right: 5px;
+}
+.containerheader {
+    background: white;
+    padding: 32px 0;
+    text-align: center;
+    color: #868686;
+    font-size: 12px;
+}
+.containerheader ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.containerheader li {
+    display: inline-block;
+}
+.containerheader li a {
+    padding: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+.containerheader li a:hover {
+    color:darkcyan;
+    background-color: lightgreen; 
+    border-radius: 1rem;   
+}
+
+.cornLogo {
+    justify-content: center;
+    width:20%  
+}
+
